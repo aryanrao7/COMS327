@@ -1,0 +1,55 @@
+Assignment 1.09
+
+Pokemon Battles
+This update introduces the Pokemon battle minigame to the existing project. Pokemon battles are turn-based interactions between trainers or a trainer and wild Pokemon. Key aspects include capturing wild Pokemon, fleeing battles, and trainer battles where capture is not possible.
+
+Mechanics Simplifications
+No implementation of status effects or Pokemon abilities.
+Turn-based system with priority rules.
+Moves may miss based on accuracy.
+
+Battle Mechanics Overview
+Knocked out Pokemon are revived before rejoining battles.
+Move accuracy determined by rand() mod 100 < moves.accuracy.
+Damage calculation formula provided for implementing moves.
+
+Player Options During Battle
+Fight: Active Pokemon uses a move (player or AI choice).
+Bag: Use items like revives, potions, and Pokeballs.
+Run: Attempt to flee a wild Pokemon battle.
+Pokemon: Switch to a different active Pokemon.
+
+Bag Mechanic
+Revive: Revives a knocked-out Pokemon to half HP.
+Potion: Restores up to 20 HP without exceeding max HP.
+Pokeballs: Used only in battles with wild Pokemon for capture attempts.
+
+Pokemon Switching
+Only one active Pokemon at a time.
+Switching Pokemon consumes a turn.
+Can switch only if the selected Pokemon is not knocked out.
+
+Starting Items
+PC starts with a limited number of potions, revives, and Pokeballs.
+Detailed catch mechanics in the next update (1.10).
+
+NPC (AI) Behavior
+AI-driven Pokemon battles.
+AI can be as simple or complex as desired.
+Default behavior: random move selection, switch on knockout.
+
+Flee Mechanic (Simplified)
+Fixed probability for escaping wild Pokemon battles.
+
+Restoration After Battle
+Pokemon do not auto-heal after battle.
+Visit Pokemon Center for full restoration.
+Visit PokéMart to restore supplies (optional shopping mechanic).
+
+Bag Access Outside Battle
+Implement the 'B' command to access the bag outside of battle.
+Apply restores and heals to party Pokemon.
+
+Steps to run:
+1. 'make' - to create executable
+2. './poke327' - to run the game

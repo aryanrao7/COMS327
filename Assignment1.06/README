@@ -1,0 +1,57 @@
+Updates
+Last week, we introduced character movement. If you added any code for character movement, it's time to remove it.
+ We're about to add a user interface to control your character manually. Optionally, you can leave the auto-drive code in place and 
+ add a command to toggle it on and off at runtime.
+The PC can now use the movement keys to move into a gate. Doing this does not leave the PC standing in the gate; instead, it places the PC in the in the road square directly abeam of the gate in the neighboring map. For example, if the west gate is at (0,10) in map (0,0), 
+moving west into (0,10) will place the PC at (78,10) in map (-1,0).
+NPCs cannot move into gates.
+NPCs and their respective turn queues should be maintained across movement through gates. To achieve this, you’ll probably want a turn queue per map. 
+Time does not (need to) pass in a map where the PC is not present.
+Language and Library
+We're still working in C. Make sure to link in the ncurses library, as we will use it for unbuffered I/O.
+
+Map Exits
+Neither the player character (PC) nor the non-player characters (NPCs) can use the map exits at this point. 
+The PC should not stand on the exit, as it will impact your pathfinding implementation from 1.03.
+
+User Input
+All commands are to be activated immediately upon keypress (unbuffered input). No need to hit "Enter." Any command not explicitly defined is a no-op.
+
+Here are the implemented commands:
+
+7 or y: Move PC one cell to the upper left.
+8 or k: Move PC one cell up.
+9 or u: Move PC one cell to the upper right.
+6 or l: Move PC one cell to the right.
+3 or n: Move PC one cell to the lower right.
+2 or j: Move PC one cell down.
+1 or b: Move PC one cell to the lower left.
+4 or h: Move PC one cell to the left.
+>: Attempt to enter a Pokemart or Pokemon Center (only works when standing on a building). Leads to a placeholder user interface for the building, 
+which you exit with <.
+5 or space or .: Rest for a turn (NPCs still move).
+t: Display a list of trainers on the map, with their symbol and position relative to the PC (e.g., "r, 2 north and 14 west").
+up arrow: When displaying the trainer list, scroll up if the list doesn't fit on the screen and you're not at the top.
+down arrow: When displaying the trainer list, scroll down if the list doesn't fit on the screen and you're not at the bottom.
+escape: When displaying the trainer list, return to character control.
+Q: Quit the game.
+Pokemon Battles
+If the PC attempts to move to a map cell with an NPC, or if an NPC attempts to move to the PC's map cell, and 
+the PC has not already defeated this trainer in a battle, a Pokemon Battle interface is triggered. For now, it's a placeholder, 
+with the only command being escape to leave the battle, marking the NPC as defeated. Defeated trainers will no longer path to the PC.
+
+Special Powers
+If your PC had special powers (e.g., moving through mountains or forests), they should no longer apply. Your PC is now a normal human.
+
+Game Loop and Display
+With these changes, we no longer need the delay we added last week, as the game now automatically pauses for input. ncurses should handle redrawing, 
+so there's no need to spew the entire map to the terminal each turn.
+
+Our maps fill 21 out of 24 lines in a terminal. Display them on lines 1–21 (zero indexed). 
+The top line is for message display, which can be used for debugging information or messages like 
+"There's a tree in the way!" or "A wild Riakou appears!". The bottom 2 lines are for status information, which will be addressed in a later assignment.
+
+To run the game:
+
+Run make to build the game.
+Run ./pokemon to start the application, generating the map and allowing you to move on it.

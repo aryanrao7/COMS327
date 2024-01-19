@@ -1,0 +1,39 @@
+October 9, 2023 - 3:20 PM
+- Conducted comprehensive testing of NPC movement
+- Addressed edge cases in NPC pathfinding
+- Optimized NPC pathfinding
+- Finalized NPC integration and prepared for user testing
+
+October 10, 2023 - 9:45 AM
+- Began implementing the user interface for character control
+- Enabled manual character movement using keys
+- Added the ability to rest and view a list of trainers on the map
+- Integrated user input with character actions
+
+October 12, 2023 - 1:30 PM
+- Enhanced user interface for character control
+- Implemented scrolling functionality for the trainer list
+- Provided the ability to return to character control from the trainer list
+- Added the command to quit the game
+
+October 15, 2023 - 4:10 PM
+- Improved code for character and NPC interactions
+- Implemented placeholder Pokemon Battle interface
+- Added the ability to escape from battles
+- Marked defeated trainers as non-pathable
+
+October 18, 2023 - 10:00 AM
+- Removed special powers from the player character
+- Enhanced user experience by removing the need for manual delays
+- Integrated the ncurses library for unbuffered I/O and better display
+- Prepared the game for automatic pausing and redrawing
+
+October 20, 2023 - 2:15 PM
+- Revised and documented the readme file to reflect the latest changes
+- Provided information about user commands and updated the game's description
+- Recommended the use of color for terrain
+
+October 22, 2023 - 8:00 AM
+- Conducted thorough testing of the entire game
+- Resolved any remaining bugs and issues
+- Finalized the build for the latest version

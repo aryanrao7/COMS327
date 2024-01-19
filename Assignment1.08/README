@@ -1,0 +1,27 @@
+Assignmet 1.08 - Encountering Pokémon
+
+Pokémon can be encountered while walking through tall grass.
+Encounter probability is influenced by player movement.
+Pokémon can spawn at any location, including fully evolved forms and legendary/mythical Pokémon.
+Pokémon Stats and Levels
+Pokémon levels increase with Manhattan distance from the origin.
+
+Level ranges are determined based on distance, with a minimum and maximum level.
+Pokémon stats are influenced by individual values (IVs) uniformly distributed in the range [0,15].
+Pokémon Movesets
+Pokémon have up to two moves based on their level-up learnset.
+Move selection is done through a uniform distribution.
+
+Shiny Pokémon
+Pokémon have a 1/8192 chance of being shiny.
+Simplified shiny appearance probability using rand() % 8192 == 0.
+
+Battling (Placeholder)
+Placeholder for the battle and capture sequence.
+Displays Pokémon level, stats, and moves before pausing for user input.
+
+
+Running the Program:
+
+make
+./poke327 

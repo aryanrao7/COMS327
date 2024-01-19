@@ -1,0 +1,39 @@
+I decided to code four different games for this assignment using ncurses. 
+Four console-based games: Tic Tac Toe (Single and Double Player), Blackjack, and Connect Four.
+
+Getting Started
+To run the games, follow these steps:
+
+Open a terminal window.
+Navigate to the root directory of the project.
+Execute the following commands:
+
+1. make
+2. ./games
+This will compile the code using the make command and then run the games executable.
+
+Game Menu
+After running the games executable, a menu will be displayed where you can select the game you want to play:
+
+Tic Tac Toe (Single Player)
+Tic Tac Toe (Two Players)
+Blackjack
+Connect Four
+Enter the corresponding number for the game you wish to play.
+
+Game Files
+The source code for each game is organized into separate files:
+
+Tic Tac Toe
+Files: games.cpp, player.h, player.cpp, tictactoe.cpp, tictactoe.h
+How to Play:
+Single Player: Play against a computer opponent.
+Two Players: Play against a friend.
+
+Blackjack
+File: blackjack.cpp
+How to Play: Follow the on-screen instructions to play Blackjack.
+
+Connect Four
+File: connect.cpp
+How to Play: Follow the on-screen instructions to play Connect Four.

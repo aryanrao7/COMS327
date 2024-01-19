@@ -1,0 +1,26 @@
+Changelog - Player Character and Trainers
+-------------------------------------
+
+October 4, 2023 - 2:30 PM
+-------------------------------------
+- Reviewed NPC types and movement requirements
+- Designed NPC structs for hikers, rivals, pacers, wanderers, sentries, and explorers
+- Began implementing movement behaviors for hiker and rival NPCs
+
+October 5, 2023 - 10:15 AM
+-------------------------------------
+- Continued NPC movement implementation
+- Integrated NPC movement with map constraints
+- Conducted initial tests for NPC pathfinding
+
+October 7, 2023 - 5:45 PM
+-------------------------------------
+- Fine-tuned NPC movement algorithms
+- Ensured NPCs don't collide with each other or enter restricted areas
+- Completed NPC movement and interaction with the map
+
+October 8, 2023 - 3:20 PM
+-------------------------------------
+- Conducted comprehensive NPC movement testing
+- Addressed edge cases and optimized NPC pathfinding
+- Finalized NPC integration and ready for user testing

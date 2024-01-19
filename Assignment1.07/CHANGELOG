@@ -1,0 +1,25 @@
+October 30, 2023 - 4:00 PM
+
+- Implemented the functionality to parse data files describing Pokémon and their moves.
+- Enabled database loading from multiple locations: /share/cs327, $HOME/.poke327, and an optional third location.
+- Ensured that the program opens the database in the first location found or terminates with an error message if the database is not found.
+
+November 1, 2023 - 11:30 AM
+
+- Parsed CSV files related to Pokémon data, moves, species, experience, types, and stats.
+- Created appropriate data structures (structs or classes) to hold the parsed data.
+- Utilized the INT_MAX value as a placeholder for empty cells in the CSV files.
+- Accommodated non-ASCII characters in the type_names.csv file and filtered only English-relevant lines based on the local language ID.
+
+November 3, 2023 - 8:45 PM
+
+- Initiated the process of converting the entire codebase from C to C++.
+- Renamed C source files with the .cpp extension to adhere to C++ standards.
+- Updated the makefile to support C++ compilation.
+- Ensured compatibility with the C++ compiler
+
+November 5, 2023 - 11:15 AM
+
+- Refactored data structures, defining maps and characters as classes rather than structs.
+- Addressed and resolved any remaining bugs and issues.
+- Finalized the build for the latest version of the game.

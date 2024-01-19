@@ -1,0 +1,28 @@
+November 6, 2023 - 3:45 PM
+
+- Added functionality to generate Individual Values (IVs) for Pokémon stats (HP, attack, defense, speed, special attack, special defense) uniformly distributed in the range [0,15].
+- Incorporated the concept of generating Pokémon with a shiny appearance, simplifying the process using rand() % 8192 == 0.
+- Updated the database parsing logic to consider the version group ID in moves.csv.
+- Provided a mechanism to select movesets from a specific game.
+
+November 8, 2023 - 10:15 AM
+
+- Integrated the mechanics of leveling up Pokémon using the provided formulae for HP and other stats.
+- Addressed potential complexities related to effort values (EVs) by simplifying the MSG mechanic.
+- Introduced a simplified gender mechanic, making all species have an equal probability of being male or female.
+- Continued code refactoring and bug fixing as needed.
+
+November 10, 2023 - 2:30 PM
+
+- Implemented the ability to encounter Pokémon in the game, considering factors such as tall grass and Manhattan distance from the origin.
+- Simplified mechanics from the main series Pokémon games to maintain code simplicity and enhance learning.
+- Introduced the concept of spawning Pokémon with levels, movesets, and stats based on specified rules.
+- Simplified the gender mechanics by giving all species an equal probability of being male or female.
+- Simplified the shiny Pokémon appearance probability for simplicity, using rand() % 8192 == 0.
+
+November 12, 2023 - 9:00 AM
+
+- Added a placeholder function for the battle and capture sequence when encountering Pokémon.
+- Implemented the formulae for leveling up Pokémon, considering base stats, individual values (IVs), and level.
+- Prepared the groundwork for trainers in battles, generating random level 1 Pokémon for both the player and non-player characters (NPCs).
+- Updated the trainer-battle placeholder function to display details about NPC Pokémon, confirming the effectiveness of the Pokémon generation code.

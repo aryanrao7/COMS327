@@ -1,0 +1,1 @@
+This is a C program that demonstrates Sobel edge detection on a grayscale image using a 3x3 Sobel filter. It reads a PGM image file, applies the Sobel filter to detect edges, and saves the resulting edge-detected image as a new PGM file.

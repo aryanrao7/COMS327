@@ -1,0 +1,8 @@
+This is a simple C program that generates random terrain maps using a combination of characters. The generated maps include various terrain features such as walls, open clearings, grass, water, and more.
+
+Features:
+
+Generates random terrain maps with defined dimensions (MAP_WIDTH x MAP_HEIGHT).
+Includes walls around the map boundaries.
+Creates paths through the map using different characters.
+Adds grass, water, and other elements randomly.

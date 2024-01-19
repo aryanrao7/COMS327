@@ -1,0 +1,26 @@
+Changelog - Moving from Map to Map
+-------------------------------------
+
+September 11, 2023 - 8:30PM
+---------------------------------
+- Understood what is required
+- Added struct world
+- Started playing with build_paths method
+
+September 13, 2023 - 9:00PM
+---------------------------------
+- Started working on new_map to calculate distance and probability
+- 'dist' represents distance: This variable is used to calculate the distance between the current map's center (at world.latest_index[dim_x] and world.latest_index[dim_y]) and the overall center of the map (MAP_SIZE / 2). It is used to determine how far the current map is from the map's center. By naming it d, it's clear that this variable is related to distance.
+- 'prob' represents probability: This variable is used to calculate the probability of certain events happening (specifically, the events of placing a pokemart and a center on the map). The probability is calculated based on the distance d. By naming it p, it's clear that this variable is related to probability.
+
+
+September 16, 2023 - 11:00AM
+---------------------------------
+- Started with taking inputs (n,s,w,e) for the commands
+- Made sure ends have no gates
+- Completed all the features required for the assignment
+
+September 17, 2023 - 3:00PM
+----------------------------------
+- Started running tests
+- Added colors to the elements

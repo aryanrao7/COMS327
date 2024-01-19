@@ -1,0 +1,16 @@
+In the first week I generated random maps with all the required functionalities. Then I had used the exits/gates to connect to other maps.		
+Last week I made the path finding algorithms. Defined the travel times and costs as per the required document.					
+
+I have also used Professors code solution for Assignment 1.01. I understood the Dijkstras Algorithm and wanted to use that. I have added my required functions for this
+weeks assignment on top of that.	
+
+This weeks highlights:
+Implemented movement routines for the PC and scatter trainers on the map, represented by '@' and letters respectively.
+
+Defined six NPC types ('h', 'r', 'p', 'w', 's', 'e') with specific movement behaviors within the map. Avoid collisions and terrain restrictions.
+
+Game Mechanics: Utilize a priority queue to drive character movement, redrawing the map after each PC turn and allowing the game to run until terminated with control-C.
+Steps to run:
+
+- 'make' will run the makefile
+- './move' will start the application, generating the map and showing player movement

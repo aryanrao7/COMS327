@@ -1,0 +1,28 @@
+October 23, 2023 - 2:00 PM
+
+Implemented the functionality to move between neighboring maps.
+Enabled PC to move through gates, placing the PC in the adjacent map's road square.
+Ensured that NPCs cannot move into gates.
+Maintained turn queues for NPCs and their positions when moving through gates.
+NPCs and their respective turn queues remain unaffected when PCs are not present on a map.
+
+October 25, 2023 - 10:30 AM
+
+Introduced the ability to fly within the game, following the concept from 1.02.
+The 'f' command allows players to initiate the flying process.
+Implemented the interface to read X and Y coordinates for flying.
+Provided flexibility for the placement of the PC within the destination map, typically on the road.
+Ensured the maintenance of turn queues and NPC positions while flying.
+
+October 27, 2023 - 3:45 PM
+
+Commenced the porting process, converting the entire game into C++.
+Renamed C files with the .cpp extension to align with C++ standards.
+Updated the makefile to accommodate C++ compilation.
+Ensured that the project can compile with the C++ compiler.
+
+October 29, 2023 - 9:15 AM
+
+Structs including the map and character structures have been redefined as classes.
+Resolved any remaining bugs and issues
+Finalized the build for the latest version

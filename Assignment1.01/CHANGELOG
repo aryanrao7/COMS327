@@ -1,0 +1,25 @@
+Changelog - Terrain Generation
+-------------------------------------
+
+September 4, 2023 - 3:30PM
+---------------------------------
+- Implemented the basic map generation with walls, exits, and central structures.
+- Added random generation of grass, rocks, and water elements.
+- Created a fill function to add additional environmental features.
+- Implemented a map printing function for visualization.
+
+September 6, 2023 - 9:00PM
+---------------------------------
+- Fixed a bug in the fill function where some tiles were not filled properly.
+- Improved the randomization of environmental features for a more natural look.
+- Updated the map printing function to use clearer symbols for elements.
+
+September 9, 2023 - 2:00PM
+---------------------------------
+- Element spawning in empty spaces.
+- Adjusted the size and distribution of grass, rocks, and water regions.
+- Fine-tuned the randomization algorithm for more variety in map generation.
+
+September 10, 2023 - 6:00PM
+----------------------------------
+- Fixed an issue where the map generation could lead to unreachable areas.

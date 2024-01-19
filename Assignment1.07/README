@@ -1,0 +1,33 @@
+Assignment 1.07 - Data Parsing
+
+Features
+Data parsing of Pokémon-related information from CSV files.
+Loading data from multiple predefined locations.
+Data structuring and storage for efficient access.
+Compatibility with C and C++ codebases.
+Support for filtering non-English entries in data files.
+Integration with other applications or games.
+
+Running the Program:
+
+Run the program with a specified command line parameter (e.g., pokemon, moves, pokemon_moves, etc.).
+The program will parse the corresponding CSV file, print its contents to the standard output, and exit without initializing any graphical interface.
+shell
+Copy code
+./poke327 [parameter]
+Replace [parameter] with one of the following:
+
+pokemon
+moves
+pokemon_moves
+pokemon_species
+experience
+type_names
+pokemon_stats
+stats
+pokemon_types
+Database Locations
+The program looks for the database in the following locations (in this order):
+
+/share/cs327
+$HOME/.poke327

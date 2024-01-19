@@ -1,0 +1,24 @@
+Changelog - Path Fining
+-------------------------------------
+
+September 24, 2023 - 4:00 PM
+---------------------------------
+- Understood what is required
+- Added some structs 
+- Started playing around with hikerDist and rivalDist methods
+
+September 26, 2023 - 11:00 PM
+---------------------------------
+- Started working on travel times
+- Adding PC to map
+
+
+September 29, 2023 - 10:00 AM
+---------------------------------
+- Checking on pyrite to mkae sure its working there
+- Completed all the features required for the assignment
+
+October 1, 2023 - 4:00 PM
+----------------------------------
+- Started running tests
+- Creating all necassary files and naming conventions

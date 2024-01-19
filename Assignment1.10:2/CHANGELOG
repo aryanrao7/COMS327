@@ -1,0 +1,40 @@
+December 1, 2023
+
+- Added Tic Tac Toe Game:
+- Implemented a single-player version of Tic Tac Toe.
+- Created player classes for managing player information.
+- Added header files for modular code organization.
+
+December 3, 2023
+
+- Enhancements to Tic Tac Toe:
+- Incorporated a two-player mode for Tic Tac Toe.
+- Improved code readability and structure.
+- Fixed minor bugs related to player moves.
+
+December 4, 2023
+
+- Introducing Blackjack Game:
+- Added a new game: Blackjack.
+- Implemented basic gameplay logic for player and dealer turns.
+- Created a menu system for game selection.
+
+December 6, 2023
+
+- Connect Four Game Implementation:
+- Added a new game: Connect Four.
+- Implemented the game engine and display logic.
+- Ensured compatibility with the existing menu system.
+
+December 7, 2023
+
+- User Interface Enhancements:
+- Incorporated the use of ncurses library for a more interactive console interface.
+- Improved the display and user input handling for a smoother gaming experience.
+
+December 8, 2023
+
+- Bug Fixes and Code Cleanup:
+- Addressed issues related to user input in the Connect Four game.
+- Conducted code cleanup and refactoring for better maintainability.
+- Updated the README file with clearer instructions and details.
